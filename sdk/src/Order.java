@@ -1,4 +1,6 @@
-public class Order {
+import java.io.Serializable;
+
+public class Order implements Serializable {
     private int id;
     private float value;
     private int[] items;

@@ -11,17 +11,17 @@ object Main {
 
             val order = manager.create(123f, intArrayOf(1, 2, 3))
 
-            print("Order: ${order.id}")
+            println("Order: ${order.id}")
 
             order.value = 321f
 
             manager.update(order)
 
-            print(manager.all())
+            println(manager.all())
 
             manager.delete(order.id)
 
-            print(manager.all())
+            println(manager.all())
 
         } catch (e: RemoteException) {
             e.printStackTrace()

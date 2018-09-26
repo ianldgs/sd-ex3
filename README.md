@@ -2,6 +2,6 @@
 
 ## Execute RMI
 ```
-CLASSPATH=~/projects/cotemig/sd/rpc/out/artifacts/server_jar/server.jar;~/projects/cotemig/sd/rpc/out/artifacts/server_jar \
+CLASSPATH=~/projects/cotemig/sd/rpc/out/artifacts/server_jar/server.jar \
 rmiregistry
 ```

@@ -29,8 +29,8 @@ class OrderRepository : OrderManager, UnicastRemoteObject() {
     }
 
     override fun delete(id: Int) {
-        orders
+        orders = orders
             .filter { o -> o.id != id }
-            .toCollection(orders)
+            .toMutableList()
     }
 }
